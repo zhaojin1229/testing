@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/na"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@null"
+    tools:context=".MainActivity" >
+    
+<ImageView
+        android:id="@+id/i"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:paddingTop="3dp"
+        
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/vid_cell_bg"/>
+     
+     <RelativeLayout  
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:focusable="false"
+        android:visibility="gone"
+        android:focusableInTouchMode="false"
+         > 
+     </RelativeLayout>
+
+     <ImageView
+         android:id="@+id/imageButton1"
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:layout_alignParentLeft="true"  
+         android:layout_alignTop="@+id/i"
+         android:layout_marginLeft="15dp"   
+         android:layout_marginTop="48dp"
+         android:focusable="false"
+         android:scaleType="fitXY"
+         
+         android:focusableInTouchMode="false"
+         android:src="@drawable/video_img" />
+
+
+
+     <TextView
+         android:id="@+id/ndp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageButton1"
+         android:layout_alignParentTop="true"
+         android:layout_alignRight="@+id/title"
+         android:layout_marginTop="10dp"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:maxLines="2"
+         android:text="NDPPeeps"
+         android:textColor="#ffffff"
+         android:textSize="30dp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_toRightOf="@+id/imageButton1"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:maxLines="4"
+         android:text="NDP  2013dsadasdsadasda"
+         android:textSize="20dp"
+         android:textColor="#ffffff" />
+
+</RelativeLayout>

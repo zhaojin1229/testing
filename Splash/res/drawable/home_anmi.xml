@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item android:drawable="@drawable/phone01" android:duration="4000"/>
+
+<item android:drawable="@drawable/phone02" android:duration="4000"/>
+
+<item android:drawable="@drawable/phone03" android:duration="4000"/>
+
+<set 
+    android:shareInterpolator="false" >
+
+    <alpha
+        android:duration="4000"
+        android:fromAlpha="0.2"
+        android:toAlpha="1.0" />
+
+</set>
+</animation-list>

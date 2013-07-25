@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cell_bg"
+    android:padding="7dp"
+    >
+
+       <ImageView
+           android:id="@+id/faq_viewimage"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="13dp"
+           android:layout_marginTop="28dp"
+           android:scaleType="fitXY"
+           android:background="@drawable/ndphomepage"
+           android:padding="4dp" />
+
+       <TextView
+           android:id="@+id/faq_item_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/faq_viewimage"
+           android:layout_marginLeft="27dp"
+           android:layout_marginTop="17dp"
+           android:layout_toRightOf="@+id/faq_viewimage"
+           android:padding="2dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@color/white"
+           android:textSize="20dp" />
+
+       <TextView
+           android:id="@+id/faq_item_subtitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/faq_item_title"
+           android:layout_below="@+id/faq_item_title"
+           android:layout_marginTop="11dp"
+           android:padding="2dp"
+           android:textColor="@color/white"
+           android:textSize="13dp" />
+    
+</RelativeLayout>
